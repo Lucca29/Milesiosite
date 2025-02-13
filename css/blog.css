@@ -145,15 +145,57 @@
 }
 
 @media (max-width: 768px) {
-    .articles-grid {
-        grid-template-columns: 1fr;
-    }
-
     .hero-article {
-        padding: 2rem 0;
+        padding: 2rem 1rem;
     }
 
-    .articles-section {
-        padding: 2rem 0;
+    .featured-article {
+        padding: 1rem;
     }
+
+    .article-image img {
+        height: 250px;
+    }
+
+    .article-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .articles-grid {
+        padding: 0 1rem;
+    }
+
+    .article-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .card-content {
+        padding: 1rem;
+    }
+
+    .header {
+        padding: 1rem;
+        position: relative;
+        z-index: 1000;
+        background: var(--dark);
+    }
+
+    .nav-links {
+        background: rgba(26, 26, 46, 0.95);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* Ajuster le header pour le blog */
+.header {
+    background: var(--dark);
+    position: relative;
+    z-index: 1000;
+}
+
+/* S'assurer que la nav est bien visible sur le fond */
+.nav-container {
+    position: relative;
+    z-index: 1000;
+    background: var(--dark);
 }

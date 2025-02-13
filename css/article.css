@@ -200,4 +200,39 @@
     opacity: 0.9;
     line-height: 1.6;
     font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+    .article-content {
+        padding: 2rem 1rem;
+    }
+
+    .article-header h1 {
+        font-size: 2rem;
+    }
+
+    .article-header img {
+        height: 250px;
+    }
+
+    .article-body {
+        font-size: 1rem;
+    }
+
+    .article-body h2 {
+        font-size: 1.5rem;
+    }
+
+    .article-body h3 {
+        font-size: 1.3rem;
+    }
+
+    .pro-tip {
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .cta-box {
+        padding: 1.5rem 1rem;
+    }
 } 

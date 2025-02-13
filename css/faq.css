@@ -1,6 +1,6 @@
 /* Styles pour la FAQ */
 .faq-hero {
-    background: linear-gradient(135deg, var(--dark), rgba(182, 178, 255, 0.05));
+    background: var(--dark);
     padding: 4rem 0 2rem;
     text-align: center;
     position: relative;
@@ -177,8 +177,49 @@
 }
 
 /* Ajustement pour le conteneur principal */
-.faq-content .container {
+.faq-content {
+    background: var(--dark);
     position: relative;
-    overflow: hidden;
-    min-height: 500px;
+    z-index: 1;
+}
+
+/* Ajuster le header pour la FAQ */
+.header {
+    background: var(--dark);
+    position: relative;
+    z-index: 1000;
+}
+
+/* S'assurer que la nav est bien visible sur le fond */
+.nav-container {
+    position: relative;
+    z-index: 1000;
+    background: var(--dark);
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+        position: relative;
+        z-index: 1000;
+        background: var(--dark);
+    }
+
+    .nav-links {
+        background: rgba(26, 26, 46, 0.95);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* Wrapper global pour assurer un fond uniforme */
+.wrapper {
+    background: var(--dark);
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Assurer que le main a aussi le même background */
+main {
+    background: var(--dark);
+    width: 100%;
 } 

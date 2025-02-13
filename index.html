@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milésio</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>Milésio - Suivi kilométrique</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -15,9 +15,15 @@
             <nav class="nav-container">
                 <a href="index.html" class="logo">
                     <img src="assets/logo.png" alt="Milésio">
+                    <span class="animate-text">Milésio</span>
                 </a>
+                <button class="menu-burger">
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                </button>
                 <div class="nav-links">
-                    <a href="index.html" class="active">Accueil</a>
+                    <a href="index.html">Accueil</a>
                     <a href="projet.html">Le projet</a>
                     <a href="blog.html">Blog</a>
                     <a href="faq.html">FAQ</a>
@@ -42,7 +48,7 @@
                     intelligentes et évitez les dépassements coûteux de votre contrat LLD ou LOA.
                 </p>
                 <div class="cta-group">
-                    <a href="https://apps.apple.com/fr/app/milesio-trackeur-kilom%C3%A8tres/id6740035886?l=en-GB" class="explore-btn">
+                    <a href="https://apps.apple.com/fr/app/milesio-trackeur-kilom%C3%A8tres/id6740035886" class="explore-btn">
                         <i class="fab fa-apple"></i>
                         Télécharger l'application
                     </a>
@@ -57,6 +63,9 @@
                     <div class="odometer">
                         <span class="counter">0</span>
                         <span class="unit">km</span>
+                    </div>
+                    <div class="projection">
+                        
                     </div>
                     <div class="progress-wrapper">
                         <div class="progress">
@@ -172,13 +181,13 @@
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
                         <div class="testimonial-image">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="Thomas">
+                            <img src="assets/CelineN.png" alt="Céline N.">
                         </div>
                         <div class="testimonial-content">
-                            <p>"Grâce à Milésio, je gère parfaitement mon kilométrage en LLD. L'application m'alerte avant tout risque de dépassement, c'est exactement ce dont j'avais besoin !"</p>
-                            <div class="testimonial-author">
-                                <strong>Thomas D.</strong>
-                                <span>Contrat LLD 30 000 km/an</span>
+<p>Je suis satisfaite de Milésio. Application facile à utiliser et permet de suivre efficacement le kilométrage de mon véhicule, elle m'assure de respecter les limites de mon contrat de location. Je recommande cette application à tous les utilisateurs de véhicules en LOA.</p>
+                           <div class="testimonial-author">
+                                <strong>Celine N.</strong>
+                                <span>Contrat LOA 30 000 km/an</span>
                             </div>
                         </div>
                     </div>
@@ -216,7 +225,7 @@
             <div class="container">
                 <h2>Prenez le contrôle de votre kilométrage</h2>
                 <p>Rejoignez les milliers d'utilisateurs qui font confiance à Milésio pour optimiser leur contrat de leasing auto.</p>
-                <a href="https://apps.apple.com/fr/app/milesio-trackeur-kilom%C3%A8tres/id6740035886?l=en-GB" class="cta-button">
+                <a href="https://apps.apple.com/fr/app/milesio-trackeur-kilom%C3%A8tres/id6740035886" class="cta-button">
                     <i class="fab fa-apple"></i>
                     Télécharger l'application
                 </a>
@@ -224,5 +233,6 @@
         </section>
     </div>
     <script src="js/main.js"></script>
+    <script src="js/text-animation.js"></script>
 </body>
 </html> 
