@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notre projet - Milésio</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>Milésio - Suivi kilométrique</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -17,7 +19,13 @@
             <nav class="nav-container">
                 <a href="index.html" class="logo">
                     <img src="assets/logo.png" alt="Milésio">
+                    <span class="animate-text">Milésio</span>
                 </a>
+                <button class="menu-burger">
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                </button>
                 <div class="nav-links">
                     <a href="index.html">Accueil</a>
                     <a href="projet.html" class="active">Le projet</a>
@@ -63,13 +71,12 @@
                     <div class="content-block reverse">
                         <div class="text-block">
                             <h2>De l'idée à la réalisation</h2>
-                            <p>Le développement de notre application contrat leasing s'est appuyé sur une analyse approfondie des besoins des conducteurs. Nous avons intégré des fonctionnalités essentielles comme le calcul kilométrage contrat leasing, les alertes kilométrage personnalisées et le suivi GPS précis des kilomètres parcourus.</p>
+                            <p>Le développement de notre application contrat leasing s'est appuyé sur une analyse approfondie des besoins des conducteurs. Nous avons intégré des fonctionnalités essentielles comme le calcul kilométrage contrat leasing et les alertes kilométrage personnalisées.</p>
                             <p>Notre outil de suivi voiture utilise des technologies avancées pour vous offrir :</p>
                             <ul class="features-list">
-                                <li>Un suivi précis des kilomètres parcourus voiture via GPS</li>
                                 <li>Des alertes intelligentes pour anticiper le dépassement kilométrique location longue durée</li>
                                 <li>Un tableau de bord complet pour optimiser son leasing auto</li>
-                                <li>Des prévisions de consommation kilomètres basées sur l'IA</li>
+                                <li>Des prévisions de consommation kilomètres</li>
                             </ul>
                         </div>
                         <div class="image-block">
@@ -143,7 +150,7 @@
                 <div class="container">
                     <h2>Prêt à rejoindre l'aventure ?</h2>
                     <p>Téléchargez Milésio et prenez le contrôle de votre kilométrage dès aujourd'hui.</p>
-                    <a href="https://apps.apple.com/fr/app/milesio-trackeur-kilom%C3%A8tres/id6740035886?l=en-GB" class="cta-button">
+                    <a href="https://apps.apple.com/fr/app/milesio-trackeur-kilom%C3%A8tres/id6740035886" class="cta-button">
                         <i class="fab fa-apple"></i>
                         Télécharger l'application
                     </a>
@@ -151,5 +158,7 @@
             </section>
         </main>
     </div>
+    <script src="js/main.js"></script>
+    <script src="js/text-animation.js"></script>
 </body>
 </html>

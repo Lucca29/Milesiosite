@@ -22,12 +22,9 @@ html, body {
 
 /* Wrapper global */
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh; /* Pour s'assurer que le wrapper prend toute la hauteur */
     background: var(--dark);
+    min-height: 100vh;
+    width: 100%;
 }
 
 /* Pour s'assurer que le main prend tout l'espace disponible */
@@ -329,7 +326,8 @@ main {
 /* Media Queries */
 @media (max-width: 1200px) {
     .container {
-        transform: translateX(150px);
+        /* Supprimer cette ligne */
+        /* transform: translateX(150px); */
     }
 
     .values-grid {
@@ -339,7 +337,8 @@ main {
 
 @media (max-width: 992px) {
     .container {
-        transform: translateX(100px);
+        /* Supprimer cette ligne */
+        /* transform: translateX(100px); */
     }
 
     .content-block {
@@ -366,7 +365,8 @@ main {
     }
 
     .container {
-        transform: translateX(0);
+        /* Supprimer cette ligne */
+        /* transform: translateX(0); */
         padding: 0 1.5rem;
     }
 
@@ -420,4 +420,24 @@ main {
 /* Ajout d'une classe pour le background global */
 body {
     background: var(--dark);
+}
+
+/* Supprimer ces styles qui causent le centrage */
+.wrapper {
+    background: var(--dark);
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Supprimer ces styles qui peuvent interférer avec style.css */
+.header,
+.nav-container {
+    /* Ne pas définir de styles ici, laisser style.css gérer */
+}
+
+/* Supprimer les transformations sur les containers */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: var(--container-padding);
 }
