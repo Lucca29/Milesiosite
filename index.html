@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milésio</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="Milésio">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Accueil</a>
+                    <a href="projet.html">Le projet</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <button class="sign-up-btn">
+                    <i class="fab fa-apple"></i>
+                    Télécharger
+                </button>
+            </nav>
+        </header>
+
+        <main class="hero">
+            <div class="hero-content">
+                <h1>
+                    <span class="text-gray intro-text">Gérez votre</span><br>
+                    <span class="text-green">kilométrage</span><br>
+                    <span class="text-gray">sereinement</span>
+                </h1>
+                <p class="hero-description">
+                    Milésio révolutionne le suivi kilométrique de votre leasing automobile. 
+                    Suivez en temps réel vos kilomètres parcourus, recevez des alertes 
+                    intelligentes et évitez les dépassements coûteux de votre contrat LLD ou LOA.
+                </p>
+                <div class="cta-group">
+                    <a href="https://apps.apple.com/fr/app/milesio-trackeur-kilom%C3%A8tres/id6740035886?l=en-GB" class="explore-btn">
+                        <i class="fab fa-apple"></i>
+                        Télécharger l'application
+                    </a>
+                    <div class="coming-soon">
+                        <i class="fab fa-android"></i>
+                        <span>Bientôt disponible sur Android</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="kilometer-display">
+                    <div class="odometer">
+                        <span class="counter">0</span>
+                        <span class="unit">km</span>
+                    </div>
+                    <div class="progress-wrapper">
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 0%"></div>
+                        </div>
+                        <div class="progress-labels">
+                            <span>0 km</span>
+                            <span>Objectif: 0 km</span>
+                        </div>
+                    </div>
+                    <div class="status-message">
+                        <span class="status">Entrez vos données</span>
+                        <p>Remplissez le formulaire ci-dessous</p>
+                    </div>
+                    
+                    <form class="kilometer-form">
+                        <div class="form-group">
+                            <label>Date de début du leasing</label>
+                            <input type="date" id="startDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Kilométrage actuel</label>
+                            <input type="number" id="currentKm" placeholder="ex: 24367" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label>Kilométrage annuel autorisé</label>
+                            <input type="number" id="allowedKm" placeholder="ex: 15000" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label>Durée du leasing (années)</label>
+                            <select id="leaseDuration">
+                                <option value="2">2 ans</option>
+                                <option value="3">3 ans</option>
+                                <option value="4">4 ans</option>
+                                <option value="5">5 ans</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="calculate-btn">Calculer</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <section class="features">
+            <div class="container">
+                <h2>Pourquoi choisir Milésio pour votre suivi kilométrique ?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Suivi précis des kilomètres</h3>
+                        <p>Suivez en temps réel vos kilomètres parcourus et évitez tout dépassement kilométrique en LLD ou LOA.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bell"></i>
+                        <h3>Alertes intelligentes</h3>
+                        <p>Recevez des notifications personnalisées pour anticiper et prévenir les dépassements de votre contrat leasing auto.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Prévisions avancées</h3>
+                        <p>Analysez vos tendances de conduite et optimisez votre forfait kilométrique en location longue durée.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <h2>Comment optimiser votre contrat de leasing ?</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <h3>Enregistrez vos données</h3>
+                        <p>Renseignez votre kilométrage actuel et les conditions de votre contrat LLD ou LOA.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <h3>Suivez votre progression</h3>
+                        <p>Consultez votre consommation kilométrique et les projections en temps réel.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <h3>Évitez les surcoûts</h3>
+                        <p>Adaptez votre utilisation grâce aux alertes et économisez sur les frais de dépassement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2>Questions fréquentes sur le suivi kilométrique</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Comment éviter le dépassement kilométrique en LLD ?</h3>
+                        <p>Milésio vous aide à suivre précisément vos kilomètres et vous alerte avant tout risque de dépassement.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Quelle est la meilleure application pour gérer son contrat LOA ?</h3>
+                        <p>Notre application propose un suivi complet de votre kilométrage avec des fonctionnalités avancées de prévision.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Comment calculer son kilométrage restant ?</h3>
+                        <p>Milésio calcule automatiquement vos projections en fonction de votre historique de conduite.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>Ce qu'ils disent de nous</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="Thomas">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Grâce à Milésio, je gère parfaitement mon kilométrage en LLD. L'application m'alerte avant tout risque de dépassement, c'est exactement ce dont j'avais besoin !"</p>
+                            <div class="testimonial-author">
+                                <strong>Thomas D.</strong>
+                                <span>Contrat LLD 30 000 km/an</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Sophie">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Interface intuitive et prévisions précises. Je recommande vivement pour tous ceux qui ont un contrat LOA et veulent éviter les mauvaises surprises !"</p>
+                            <div class="testimonial-author">
+                                <strong>Sophie M.</strong>
+                                <span>Contrat LOA 20 000 km/an</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop" alt="Pierre">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Application indispensable pour suivre son kilométrage. Les projections sont très utiles et m'ont permis d'adapter ma conduite pour respecter mon contrat."</p>
+                            <div class="testimonial-author">
+                                <strong>Pierre L.</strong>
+                                <span>Contrat LLD 25 000 km/an</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Prenez le contrôle de votre kilométrage</h2>
+                <p>Rejoignez les milliers d'utilisateurs qui font confiance à Milésio pour optimiser leur contrat de leasing auto.</p>
+                <a href="https://apps.apple.com/fr/app/milesio-trackeur-kilom%C3%A8tres/id6740035886?l=en-GB" class="cta-button">
+                    <i class="fab fa-apple"></i>
+                    Télécharger l'application
+                </a>
+            </div>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,88 @@
+/* Styles pour le compteur kilométrique */
+.odometer-container {
+    position: relative;
+    perspective: 1000px;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.odometer-3d {
+    transform-style: preserve-3d;
+    transform: rotateX(20deg);
+    animation: float 6s ease-in-out infinite;
+}
+
+.digit-group {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: 'Digital-7', monospace;
+    font-size: 6rem;
+    color: var(--accent);
+    text-shadow: 0 0 20px rgba(255, 216, 190, 0.5);
+}
+
+.digit {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.digit::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.05)
+    );
+    border-radius: inherit;
+}
+
+.km-label {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white);
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.progress-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    z-index: -1;
+}
+
+.speed-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.speed-line {
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--accent),
+        transparent
+    );
+} 

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Milésio</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="Milésio">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="projet.html">Le projet</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="faq.html" class="active">FAQ</a>
+                </div>
+                <button class="sign-up-btn">
+                    <i class="fab fa-apple"></i>
+                    Télécharger
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="faq-hero">
+                <div class="container">
+                    <h1>Questions fréquentes</h1>
+                    <p class="subtitle">Trouvez rapidement des réponses à vos questions sur Milésio</p>
+                </div>
+            </section>
+
+            <section class="faq-content">
+                <div class="container">
+                    <div class="faq-categories">
+                        <button class="category-btn active" data-category="general">
+                            <i class="fas fa-info-circle"></i>
+                            Général
+                        </button>
+                        <button class="category-btn" data-category="technique">
+                            <i class="fas fa-cog"></i>
+                            Technique
+                        </button>
+                        <button class="category-btn" data-category="contrat">
+                            <i class="fas fa-file-contract"></i>
+                            Contrat
+                        </button>
+                        <button class="category-btn" data-category="facturation">
+                            <i class="fas fa-credit-card"></i>
+                            Facturation
+                        </button>
+                    </div>
+
+                    <div class="faq-list">
+                        <!-- Questions Générales -->
+                        <div class="faq-category active" id="general">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>Qu'est-ce que Milésio ?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Milésio est une application mobile qui vous aide à suivre et gérer votre kilométrage en leasing (LLD/LOA). Elle vous permet d'éviter les dépassements kilométriques et les pénalités associées grâce à un suivi précis et des alertes personnalisées.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>Comment fonctionne le suivi kilométrique ?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>L'application utilise le GPS de votre téléphone pour suivre automatiquement vos trajets. Vous pouvez également saisir manuellement votre kilométrage. Milésio analyse vos données pour vous fournir des projections précises et des recommandations personnalisées.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Questions Techniques -->
+                        <div class="faq-category" id="technique">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>L'application consomme-t-elle beaucoup de batterie ?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Non, Milésio est optimisée pour une consommation minimale de batterie. L'application utilise des algorithmes intelligents pour activer le GPS uniquement lorsque nécessaire.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>Mes données sont-elles sécurisées ?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Absolument. Nous utilisons un chiffrement de bout en bout et respectons strictement le RGPD. Vos données de localisation ne sont jamais partagées et sont uniquement utilisées pour le calcul de votre kilométrage.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Questions Contrat -->
+                        <div class="faq-category" id="contrat">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>Puis-je modifier mon forfait kilométrique en cours de contrat ?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Oui, vous pouvez ajuster votre forfait dans l'application à tout moment. Milésio vous alertera si un ajustement est nécessaire pour éviter les dépassements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Questions Facturation -->
+                        <div class="faq-category" id="facturation">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h3>L'application est-elle gratuite ?</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Milésio propose une version gratuite avec les fonctionnalités essentielles. Une version premium est disponible pour accéder à des fonctionnalités avancées comme les projections IA et les rapports détaillés.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/faq.js"></script>
+</body>
+</html> 
